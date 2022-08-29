@@ -99,7 +99,7 @@ const Card = styled.div`
         height: 40%;
         display: flex;
         justify-content: center;
-        align-item: center;
+        align-items: center;
     }
 `;
 
