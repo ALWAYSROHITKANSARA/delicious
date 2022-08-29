@@ -29,7 +29,6 @@ const FormStyle = styled.form`
     div {
         position: relative;
         width: 100%;
-        
     }
     input {
         border: none;
@@ -49,6 +48,10 @@ const FormStyle = styled.form`
         left: 0%;
         transform: translate(100%,-50%);
         color: white;
+    }
+    @media (max-width: 768px){
+        margin: 0rem;
+        width: 100%;
     }
 `;
 

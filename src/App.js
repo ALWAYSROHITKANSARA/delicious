@@ -34,7 +34,6 @@ const Nav = styled.div`
   padding: 1rem 0rem;
   display: flex;
   justify-content: flex-start;
-  align-item: center;
 
   svg {
     font-size: 2rem;

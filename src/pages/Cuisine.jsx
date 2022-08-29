@@ -17,7 +17,6 @@ function Cuisine() {
 
   useEffect(()=>{
     getCuisine(params.type);
-    console.log(params.type);
   },[params.type]);
 
   return (
@@ -52,7 +51,6 @@ const Card = styled.div`
     width: 100%;
     border-radius: 2rem;
   }
-
   a {
     text-decoration: none;
   }

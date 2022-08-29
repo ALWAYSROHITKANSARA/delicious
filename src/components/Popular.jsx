@@ -33,9 +33,18 @@ const Popular = () => {
                     arrows: false,
                     pagination:false,
                     drag: 'free',
-                    gap: '5rem'
+                    gap: '5rem',
+                    autoplay: true,
+                    interval: 2000,
+                    speed: 500,
+                    perMove: 1,
+                    type   : 'loop',
+                    breakpoints: {
+                        1200: { perPage: 4, gap: '5rem' },
+                        720 : { perPage: 1, gap: '3rem' },
+                      },
                 }}>
-                    {popular.map((recipe) => {
+                    {popular?.map((recipe) => {
                         return (
                             <SplideSlide key={recipe.title}>
                                 <Card>

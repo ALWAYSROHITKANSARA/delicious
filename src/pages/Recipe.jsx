@@ -15,7 +15,6 @@ const Recipe = () => {
         const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`);
         const detailData = await data.json();
         setDetails(detailData);
-        console.log(detailData);
     }
 
     useEffect(()=>{
@@ -76,6 +75,18 @@ const DetailWrapper = styled.div`
         height: 300px;
         border-radius: 2rem;
     }
+
+    @media (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
 `;
 
 const Button = styled.button`
@@ -87,10 +98,18 @@ const Button = styled.button`
     cursor: pointer;
     margin-left: 5rem;
     border-radius: 1rem;
+
+    @media (max-width: 768px){
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
 `;
 
 const Info = styled.div`
     margin-left: 10rem;
+    @media (max-width: 768px){
+        margin-left: 0;
+    }
 `;
 
 export default Recipe
